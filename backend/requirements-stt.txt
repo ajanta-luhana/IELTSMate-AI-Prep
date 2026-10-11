@@ -1,0 +1,2 @@
+# Optional speech-to-text (Speaking Coach). Heavy download; the app works without it (students can type answers).
+faster-whisper>=1.0

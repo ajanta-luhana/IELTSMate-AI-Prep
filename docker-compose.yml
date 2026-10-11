@@ -1,0 +1,36 @@
+# Run everything: docker compose up --build
+# Ollama stays on your host machine (it already has your models).
+services:
+  backend:
+    build:
+      context: ./backend
+      args:
+        WITH_STT: ${WITH_STT:-0}
+    env_file: ./backend/.env
+    environment:
+      OLLAMA_BASE_URL: http://host.docker.internal:11434
+      CORS_ORIGINS: http://localhost:3000
+      AI_TIMEOUT_SECONDS: "240"   # small local models on CPU can be slow
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - whisper_cache:/root/.cache/huggingface   # speech model is downloaded once
+    ports:
+      - "8001:8000"   # host 8001 -> container 8000 (host 8000 is already in use)
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL}
+        NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+        NEXT_PUBLIC_API_URL: http://localhost:8001
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  whisper_cache:

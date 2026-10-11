@@ -1,0 +1,58 @@
+{
+  "part1": [
+    {"id": "p1-e1", "level": "easy", "text": "Do you live in a house or an apartment?"},
+    {"id": "p1-e2", "level": "easy", "text": "What do you usually do in the evenings?"},
+    {"id": "p1-e3", "level": "easy", "text": "Do you like cooking? Why or why not?"},
+    {"id": "p1-e4", "level": "easy", "text": "What is your favourite food?"},
+    {"id": "p1-e5", "level": "easy", "text": "Do you prefer to study in the morning or at night?"},
+    {"id": "p1-e6", "level": "easy", "text": "How do you usually travel to work or school?"},
+    {"id": "p1-i1", "level": "intermediate", "text": "What kind of weather do you enjoy most, and why?"},
+    {"id": "p1-i2", "level": "intermediate", "text": "Tell me about a hobby you have had for a long time."},
+    {"id": "p1-i3", "level": "intermediate", "text": "How has the area where you live changed in recent years?"},
+    {"id": "p1-i4", "level": "intermediate", "text": "Do you prefer spending time with friends or alone? Why?"},
+    {"id": "p1-i5", "level": "intermediate", "text": "What kinds of music do you listen to?"},
+    {"id": "p1-x1", "level": "exam", "text": "How important is it for you to keep up with the news?"},
+    {"id": "p1-x2", "level": "exam", "text": "Would you like to live in a different country in the future? Why?"},
+    {"id": "p1-x3", "level": "exam", "text": "What do you think are the best ways to learn a new skill?"},
+    {"id": "p1-x4", "level": "exam", "text": "How do you usually manage your time when you are busy?"},
+    {"id": "p1-x5", "level": "exam", "text": "Do you think technology has made your daily life easier or more complicated?"}
+  ],
+  "cue_cards": [
+    {
+      "id": "p2-e1", "level": "easy",
+      "text": "Describe a meal you enjoyed with your family.",
+      "points": ["what the meal was", "where and when you ate it", "who was there", "why you enjoyed it"],
+      "followups": [
+        {"id": "p3-e1a", "text": "Why do people enjoy eating together?"},
+        {"id": "p3-e1b", "text": "How have family meals changed over the years?"}
+      ]
+    },
+    {
+      "id": "p2-i1", "level": "intermediate",
+      "text": "Describe a place you would like to visit in the future.",
+      "points": ["where it is", "how you would travel there", "what you would do there", "why you want to go"],
+      "followups": [
+        {"id": "p3-i1a", "text": "Why do some people prefer to travel abroad rather than stay in their own country?"},
+        {"id": "p3-i1b", "text": "What are the benefits and problems of tourism for local people?"}
+      ]
+    },
+    {
+      "id": "p2-x1", "level": "exam",
+      "text": "Describe a person who helped you learn something important.",
+      "points": ["who the person is", "what they taught you", "how they taught you", "how you feel about it now"],
+      "followups": [
+        {"id": "p3-x1a", "text": "What qualities make a good teacher?"},
+        {"id": "p3-x1b", "text": "Should schools or families be more responsible for teaching children good values?"}
+      ]
+    },
+    {
+      "id": "p2-x2", "level": "exam",
+      "text": "Describe a time when you had to learn to use a new piece of technology.",
+      "points": ["what the technology was", "why you needed to use it", "how you learned", "how easy or difficult it was"],
+      "followups": [
+        {"id": "p3-x2a", "text": "Do older people find it harder to adopt new technology? Why?"},
+        {"id": "p3-x2b", "text": "How might technology change education over the next twenty years?"}
+      ]
+    }
+  ]
+}

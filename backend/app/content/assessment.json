@@ -1,0 +1,24 @@
+{
+  "passages": {
+    "rooftop": "Rooftop gardens have become increasingly common in large cities over the past two decades. Originally, they were built mainly to make buildings look more attractive, but their practical benefits are now better understood. A layer of soil and plants on a roof absorbs rainwater, which reduces the pressure on drains during storms. It also keeps a building cooler in summer, so less electricity is needed for air conditioning. In some cities, residents grow vegetables on shared roofs and sell them at local markets. However, building a rooftop garden is not cheap. The roof must be strong enough to carry the weight of wet soil, and a waterproof layer has to be installed to prevent leaks. For this reason, most gardens appear on new buildings rather than old ones. Supporters argue that the long-term savings on energy and water outweigh the initial cost."
+  },
+  "questions": [
+    {"id": "g1", "section": "grammar", "prompt": "She ___ to the library every Saturday.", "options": ["go", "goes", "going", "gone"], "answer_index": 1},
+    {"id": "g2", "section": "grammar", "prompt": "If I ___ more time, I would learn another language.", "options": ["have", "had", "will have", "having"], "answer_index": 1},
+    {"id": "g3", "section": "grammar", "prompt": "The report ___ by the committee before the deadline.", "options": ["was finished", "finished", "has finish", "finishing"], "answer_index": 0},
+    {"id": "g4", "section": "grammar", "prompt": "There isn't ___ milk left in the fridge.", "options": ["some", "any", "a", "many"], "answer_index": 1},
+    {"id": "g5", "section": "grammar", "prompt": "The book ___ I borrowed from you was fascinating.", "options": ["who", "where", "which", "whose"], "answer_index": 2},
+    {"id": "g6", "section": "grammar", "prompt": "By the time we arrived, the film ___.", "options": ["already started", "has already started", "had already started", "was already start"], "answer_index": 2},
+    {"id": "v1", "section": "vocabulary", "prompt": "Which word is closest in meaning to \"considerable\" in \"a considerable increase\"?", "options": ["small", "significant", "sudden", "careful"], "answer_index": 1},
+    {"id": "v2", "section": "vocabulary", "prompt": "Governments should ___ stricter laws to protect the environment.", "options": ["make up", "bring in", "give up", "take off"], "answer_index": 1},
+    {"id": "v3", "section": "vocabulary", "prompt": "What is the opposite of \"scarce\"?", "options": ["rare", "plentiful", "expensive", "limited"], "answer_index": 1},
+    {"id": "v4", "section": "vocabulary", "prompt": "Students need to ___ attention to the instructions.", "options": ["give", "pay", "take", "make"], "answer_index": 1},
+    {"id": "v5", "section": "vocabulary", "prompt": "A person studying for a first university degree is an ___.", "options": ["undergraduate", "instructor", "employer", "architect"], "answer_index": 0},
+    {"id": "v6", "section": "vocabulary", "prompt": "Rapid urbanisation has put pressure on existing ___ such as roads and water supplies.", "options": ["infrastructure", "ingredients", "instruments", "inventions"], "answer_index": 0},
+    {"id": "r1", "section": "reading", "passage_id": "rooftop", "prompt": "Rooftop gardens were first built mainly to...", "options": ["improve how buildings look.", "reduce electricity use.", "grow food for markets.", "manage storm water."], "answer_index": 0},
+    {"id": "r2", "section": "reading", "passage_id": "rooftop", "prompt": "Rooftop gardens reduce the amount of water that drains must handle during storms.", "options": ["True", "False", "Not Given"], "answer_index": 0},
+    {"id": "r3", "section": "reading", "passage_id": "rooftop", "prompt": "Vegetables grown on roofs are cheaper than vegetables from farms.", "options": ["True", "False", "Not Given"], "answer_index": 2},
+    {"id": "r4", "section": "reading", "passage_id": "rooftop", "prompt": "Most rooftop gardens are built on old buildings.", "options": ["True", "False", "Not Given"], "answer_index": 1},
+    {"id": "r5", "section": "reading", "passage_id": "rooftop", "prompt": "According to supporters, rooftop gardens are...", "options": ["not worth the cost.", "worth the cost over time.", "harmful to buildings.", "suitable only for homes."], "answer_index": 1}
+  ]
+}

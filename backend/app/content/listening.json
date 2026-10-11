@@ -1,0 +1,56 @@
+{
+  "tests": [
+    {
+      "id": "listening-easy-1", "title": "Joining a Gym", "level": "easy", "minutes": 8,
+      "script": [
+        {"speaker": "Receptionist", "text": "Good morning, FitZone gym. How can I help you?"},
+        {"speaker": "Customer", "text": "Hi, I'd like to join. Are there any special prices for students?"},
+        {"speaker": "Receptionist", "text": "Yes, students get a discount. The student membership is thirty pounds a month, and the standard one is forty-five."},
+        {"speaker": "Customer", "text": "Great, I'll take the student one. Do I need to bring anything?"},
+        {"speaker": "Receptionist", "text": "Please bring your student card and a form of photo ID. Also, the pool is only open until eight in the evening, but the gym stays open until ten."},
+        {"speaker": "Customer", "text": "That's fine. My name is Daniel Brooks, and I'd like to start on Monday."},
+        {"speaker": "Receptionist", "text": "Perfect, Daniel. I'll book your induction for Monday at ten o'clock."}
+      ],
+      "questions": [
+        {"id": "q1", "type": "mcq", "prompt": "How much is the student membership per month?", "options": ["30 pounds", "45 pounds", "10 pounds", "35 pounds"], "answer_index": 0, "explanation": "'The student membership is thirty pounds a month.'"},
+        {"id": "q2", "type": "completion", "prompt": "Customer's surname: ___", "accepted": ["brooks"], "hint": "Write ONE WORD.", "explanation": "'My name is Daniel Brooks.'"},
+        {"id": "q3", "type": "completion", "prompt": "Induction on Monday at ___ o'clock.", "accepted": ["ten", "10"], "hint": "Write ONE WORD or a NUMBER.", "explanation": "'...your induction for Monday at ten o'clock.'"},
+        {"id": "q4", "type": "mcq", "prompt": "Until what time is the pool open?", "options": ["6 pm", "8 pm", "10 pm", "9 pm"], "answer_index": 1, "explanation": "'The pool is only open until eight in the evening.'"},
+        {"id": "q5", "type": "mcq", "prompt": "Besides a student card, what must the customer bring?", "options": ["A swimsuit", "Photo ID", "Cash", "A towel"], "answer_index": 1, "explanation": "'...your student card and a form of photo ID.'"}
+      ]
+    },
+    {
+      "id": "listening-intermediate-1", "title": "Campus Tour", "level": "intermediate", "minutes": 10,
+      "script": [
+        {"speaker": "Guide", "text": "Welcome to Northfield University. I'll show you the main places you will need during your first week. First, the library is on your left. It has four floors, and the silent study area is on the top floor. Borrowing is free, and you can keep a book for four weeks."},
+        {"speaker": "Guide", "text": "Next, the student centre. This is where you collect your timetable and ID card. It is open from eight thirty to five, Monday to Friday. If you have questions about accommodation, go to room twelve on the ground floor."},
+        {"speaker": "Guide", "text": "Finally, the sports hall is behind the main building. Registration for clubs happens on Thursday afternoon, and the most popular clubs, such as basketball and photography, fill up quickly, so arrive early."}
+      ],
+      "questions": [
+        {"id": "q1", "type": "completion", "prompt": "The silent study area is on the ___ floor.", "accepted": ["top", "fourth", "4th"], "hint": "Write ONE WORD.", "explanation": "'...the silent study area is on the top floor.'"},
+        {"id": "q2", "type": "mcq", "prompt": "How long can students keep a library book?", "options": ["Two weeks", "Three weeks", "Four weeks", "Six weeks"], "answer_index": 2, "explanation": "'...you can keep a book for four weeks.'"},
+        {"id": "q3", "type": "completion", "prompt": "For accommodation questions, go to room ___.", "accepted": ["twelve", "12"], "hint": "Write ONE WORD or a NUMBER.", "explanation": "'...go to room twelve on the ground floor.'"},
+        {"id": "q4", "type": "mcq", "prompt": "What time does the student centre open?", "options": ["8:00", "8:30", "9:00", "5:00"], "answer_index": 1, "explanation": "'...open from eight thirty to five.'"},
+        {"id": "q5", "type": "mcq", "prompt": "When does club registration happen?", "options": ["Monday morning", "Wednesday evening", "Thursday afternoon", "Friday morning"], "answer_index": 2, "explanation": "'Registration for clubs happens on Thursday afternoon.'"},
+        {"id": "q6", "type": "completion", "prompt": "Popular clubs include basketball and ___.", "accepted": ["photography"], "hint": "Write ONE WORD.", "explanation": "'...such as basketball and photography.'"}
+      ]
+    },
+    {
+      "id": "listening-exam-1", "title": "Sleep and Memory", "level": "exam", "minutes": 12,
+      "script": [
+        {"speaker": "Lecturer", "text": "Today I'd like to talk about the relationship between sleep and memory. For a long time, people assumed that sleep was simply a period of rest for the brain. Research over the past few decades suggests something rather different."},
+        {"speaker": "Lecturer", "text": "In one well-known type of experiment, participants learn a list of words and are then divided into two groups. One group sleeps for eight hours, while the other stays awake. When tested later, the group that slept usually remembers more words."},
+        {"speaker": "Lecturer", "text": "Scientists believe that during deep sleep the brain replays recent experiences, which helps move information from short-term to long-term storage. It is worth stressing, however, that the effect varies between individuals, and that sleeping longer does not always lead to better results."},
+        {"speaker": "Lecturer", "text": "For students, the practical message is fairly clear: studying late into the night at the expense of sleep is unlikely to be an effective strategy."}
+      ],
+      "questions": [
+        {"id": "q1", "type": "mcq", "prompt": "What did people once assume about sleep?", "options": ["It strengthens memory", "It is just a time of rest", "It harms learning", "It is unimportant"], "answer_index": 1, "explanation": "'...simply a period of rest for the brain.'"},
+        {"id": "q2", "type": "tfng", "prompt": "The group that stayed awake usually remembered more words.", "answer_index": 1, "explanation": "The group that slept remembered more."},
+        {"id": "q3", "type": "completion", "prompt": "During deep sleep the brain ___ recent experiences.", "accepted": ["replays"], "hint": "Write ONE WORD.", "explanation": "'...the brain replays recent experiences.'"},
+        {"id": "q4", "type": "mcq", "prompt": "What does the lecturer say about the effect of sleep?", "options": ["It is identical for everyone", "It varies between individuals", "It only affects older people", "It disappears after a week"], "answer_index": 1, "explanation": "'...the effect varies between individuals.'"},
+        {"id": "q5", "type": "ynng", "prompt": "The speaker thinks students should give up sleep in order to study.", "answer_index": 1, "explanation": "The speaker says this is unlikely to be effective."},
+        {"id": "q6", "type": "completion", "prompt": "Information moves from short-term to ___ storage.", "accepted": ["long-term", "long term"], "hint": "Write ONE WORD (or a hyphenated word).", "explanation": "'...from short-term to long-term storage.'"}
+      ]
+    }
+  ]
+}

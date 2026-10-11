@@ -1,0 +1,844 @@
+{
+ "items": [
+  {
+   "id": "v-education-1",
+   "kind": "vocabulary",
+   "topic": "Education",
+   "prompt": "A course that students must take is ___.",
+   "options": [
+    "flexible",
+    "voluntary",
+    "compulsory",
+    "optional"
+   ],
+   "answer_index": 2,
+   "explanation": "Compulsory means required."
+  },
+  {
+   "id": "v-education-2",
+   "kind": "vocabulary",
+   "topic": "Education",
+   "prompt": "She won a ___ that paid for her university fees.",
+   "options": [
+    "curriculum",
+    "deadline",
+    "scholarship",
+    "lecture"
+   ],
+   "answer_index": 2,
+   "explanation": "A scholarship is money awarded to help pay for study."
+  },
+  {
+   "id": "v-education-3",
+   "kind": "vocabulary",
+   "topic": "Education",
+   "prompt": "The school introduced a new ___ with more science lessons.",
+   "options": [
+    "campus",
+    "tuition",
+    "curriculum",
+    "graduate"
+   ],
+   "answer_index": 2,
+   "explanation": "A curriculum is the set of subjects taught in a school."
+  },
+  {
+   "id": "v-technology-1",
+   "kind": "vocabulary",
+   "topic": "Technology",
+   "prompt": "The company plans to ___ a new app next month.",
+   "options": [
+    "throw",
+    "spend",
+    "drop",
+    "launch"
+   ],
+   "answer_index": 3,
+   "explanation": "We 'launch' a product or app."
+  },
+  {
+   "id": "v-technology-2",
+   "kind": "vocabulary",
+   "topic": "Technology",
+   "prompt": "Smartphones have become ___ in daily life; almost everyone uses one.",
+   "options": [
+    "fragile",
+    "ubiquitous",
+    "rare",
+    "private"
+   ],
+   "answer_index": 1,
+   "explanation": "Ubiquitous means found everywhere."
+  },
+  {
+   "id": "v-technology-3",
+   "kind": "vocabulary",
+   "topic": "Technology",
+   "prompt": "A ___ is a mistake in a computer program.",
+   "options": [
+    "bulb",
+    "brand",
+    "bench",
+    "bug"
+   ],
+   "answer_index": 3,
+   "explanation": "A bug is an error in software."
+  },
+  {
+   "id": "v-environment-1",
+   "kind": "vocabulary",
+   "topic": "Environment",
+   "prompt": "Burning coal contributes to global ___.",
+   "options": [
+    "washing",
+    "waiting",
+    "warming",
+    "walking"
+   ],
+   "answer_index": 2,
+   "explanation": "'Global warming' is the rise in Earth's temperature."
+  },
+  {
+   "id": "v-environment-2",
+   "kind": "vocabulary",
+   "topic": "Environment",
+   "prompt": "We must protect ___ species from disappearing.",
+   "options": [
+    "entire",
+    "endangered",
+    "entertained",
+    "enormous"
+   ],
+   "answer_index": 1,
+   "explanation": "Endangered species are at risk of dying out."
+  },
+  {
+   "id": "v-environment-3",
+   "kind": "vocabulary",
+   "topic": "Environment",
+   "prompt": "Wind and solar are examples of ___ energy.",
+   "options": [
+    "renewable",
+    "removable",
+    "reliable",
+    "regular"
+   ],
+   "answer_index": 0,
+   "explanation": "Renewable energy comes from sources that do not run out."
+  },
+  {
+   "id": "v-health-1",
+   "kind": "vocabulary",
+   "topic": "Health",
+   "prompt": "A ___ diet includes fruit, vegetables and protein.",
+   "options": [
+    "balance",
+    "balances",
+    "balancing",
+    "balanced"
+   ],
+   "answer_index": 3,
+   "explanation": "'Balanced' is the adjective that fits before 'diet'."
+  },
+  {
+   "id": "v-health-2",
+   "kind": "vocabulary",
+   "topic": "Health",
+   "prompt": "Regular exercise can ___ the risk of heart disease.",
+   "options": [
+    "receive",
+    "reduce",
+    "repair",
+    "remove"
+   ],
+   "answer_index": 1,
+   "explanation": "We 'reduce' a risk (make it smaller)."
+  },
+  {
+   "id": "v-health-3",
+   "kind": "vocabulary",
+   "topic": "Health",
+   "prompt": "Doctors advise people to avoid ___ lifestyles with too little movement.",
+   "options": [
+    "separate",
+    "sensitive",
+    "severe",
+    "sedentary"
+   ],
+   "answer_index": 3,
+   "explanation": "A sedentary lifestyle involves a lot of sitting."
+  },
+  {
+   "id": "v-work-1",
+   "kind": "vocabulary",
+   "topic": "Work",
+   "prompt": "Employees who work from home enjoy more ___ in their schedules.",
+   "options": [
+    "flexibility",
+    "fragility",
+    "facility",
+    "formality"
+   ],
+   "answer_index": 0,
+   "explanation": "Flexibility means being able to adapt or change."
+  },
+  {
+   "id": "v-work-2",
+   "kind": "vocabulary",
+   "topic": "Work",
+   "prompt": "She was ___ to manager after five years.",
+   "options": [
+    "protected",
+    "provided",
+    "promoted",
+    "produced"
+   ],
+   "answer_index": 2,
+   "explanation": "To be promoted means to move to a higher position."
+  },
+  {
+   "id": "v-work-3",
+   "kind": "vocabulary",
+   "topic": "Work",
+   "prompt": "A person who starts and runs a business is an ___.",
+   "options": [
+    "employee",
+    "entrepreneur",
+    "apprentice",
+    "applicant"
+   ],
+   "answer_index": 1,
+   "explanation": "An entrepreneur creates and runs a business."
+  },
+  {
+   "id": "v-society-1",
+   "kind": "vocabulary",
+   "topic": "Society",
+   "prompt": "Many cities face ___, with too many people living in small areas.",
+   "options": [
+    "overtaking",
+    "overcoming",
+    "overlooking",
+    "overcrowding"
+   ],
+   "answer_index": 3,
+   "explanation": "Overcrowding means too many people in a space."
+  },
+  {
+   "id": "v-society-2",
+   "kind": "vocabulary",
+   "topic": "Society",
+   "prompt": "Volunteers make a valuable ___ to the community.",
+   "options": [
+    "connection",
+    "competition",
+    "contribution",
+    "collection"
+   ],
+   "answer_index": 2,
+   "explanation": "We 'make a contribution' to something."
+  },
+  {
+   "id": "v-society-3",
+   "kind": "vocabulary",
+   "topic": "Society",
+   "prompt": "The ___ between rich and poor has widened.",
+   "options": [
+    "gain",
+    "gap",
+    "gate",
+    "gift"
+   ],
+   "answer_index": 1,
+   "explanation": "'The gap between' two groups shows a difference."
+  },
+  {
+   "id": "v-travel-1",
+   "kind": "vocabulary",
+   "topic": "Travel",
+   "prompt": "We booked our flights and ___ months in advance.",
+   "options": [
+    "acquaintance",
+    "accommodation",
+    "accusation",
+    "accumulation"
+   ],
+   "answer_index": 1,
+   "explanation": "Accommodation means a place to stay."
+  },
+  {
+   "id": "v-travel-2",
+   "kind": "vocabulary",
+   "topic": "Travel",
+   "prompt": "Tourism brings money, but it can also ___ local culture.",
+   "options": [
+    "deliver",
+    "damage",
+    "defeat",
+    "distance"
+   ],
+   "answer_index": 1,
+   "explanation": "To damage means to harm."
+  },
+  {
+   "id": "v-travel-3",
+   "kind": "vocabulary",
+   "topic": "Travel",
+   "prompt": "A document that allows you to enter another country is a ___.",
+   "options": [
+    "vote",
+    "visa",
+    "vase",
+    "view"
+   ],
+   "answer_index": 1,
+   "explanation": "A visa gives permission to enter or stay in a country."
+  },
+  {
+   "id": "v-government-1",
+   "kind": "vocabulary",
+   "topic": "Government",
+   "prompt": "The ___ announced new taxes on sugary drinks.",
+   "options": [
+    "authors",
+    "authorities",
+    "auditors",
+    "audiences"
+   ],
+   "answer_index": 1,
+   "explanation": "The authorities are the people or bodies in charge."
+  },
+  {
+   "id": "v-government-2",
+   "kind": "vocabulary",
+   "topic": "Government",
+   "prompt": "Citizens over eighteen have the right to ___ in elections.",
+   "options": [
+    "vanish",
+    "value",
+    "vote",
+    "vary"
+   ],
+   "answer_index": 2,
+   "explanation": "To vote is to choose in an election."
+  },
+  {
+   "id": "v-government-3",
+   "kind": "vocabulary",
+   "topic": "Government",
+   "prompt": "A new ___ will make it illegal to throw plastic into rivers.",
+   "options": [
+    "lane",
+    "lawn",
+    "lamp",
+    "law"
+   ],
+   "answer_index": 3,
+   "explanation": "A law is a rule made by a government."
+  },
+  {
+   "id": "v-science-1",
+   "kind": "vocabulary",
+   "topic": "Science",
+   "prompt": "Scientists carried out an ___ to test their theory.",
+   "options": [
+    "expression",
+    "expansion",
+    "expedition",
+    "experiment"
+   ],
+   "answer_index": 3,
+   "explanation": "An experiment is a test to discover or prove something."
+  },
+  {
+   "id": "v-science-2",
+   "kind": "vocabulary",
+   "topic": "Science",
+   "prompt": "The study's ___ were published in a journal.",
+   "options": [
+    "fittings",
+    "fillings",
+    "feelings",
+    "findings"
+   ],
+   "answer_index": 3,
+   "explanation": "Findings are the results of research."
+  },
+  {
+   "id": "v-science-3",
+   "kind": "vocabulary",
+   "topic": "Science",
+   "prompt": "A ___ is an idea that has not yet been proved.",
+   "options": [
+    "habit",
+    "hypocrite",
+    "harvest",
+    "hypothesis"
+   ],
+   "answer_index": 3,
+   "explanation": "A hypothesis is a proposed explanation to be tested."
+  },
+  {
+   "id": "v-culture-1",
+   "kind": "vocabulary",
+   "topic": "Culture",
+   "prompt": "Festivals help people preserve their cultural ___.",
+   "options": [
+    "hesitation",
+    "heritage",
+    "habit",
+    "hardship"
+   ],
+   "answer_index": 1,
+   "explanation": "Heritage is traditions passed down over time."
+  },
+  {
+   "id": "v-culture-2",
+   "kind": "vocabulary",
+   "topic": "Culture",
+   "prompt": "Traditional music is ___ down from one generation to the next.",
+   "options": [
+    "packed",
+    "pushed",
+    "pulled",
+    "passed"
+   ],
+   "answer_index": 3,
+   "explanation": "We 'pass down' traditions."
+  },
+  {
+   "id": "v-culture-3",
+   "kind": "vocabulary",
+   "topic": "Culture",
+   "prompt": "The museum has a large ___ of ancient pottery.",
+   "options": [
+    "collection",
+    "convention",
+    "correction",
+    "connection"
+   ],
+   "answer_index": 0,
+   "explanation": "A collection is a group of items gathered together."
+  },
+  {
+   "id": "g-tenses-1",
+   "kind": "grammar",
+   "topic": "Tenses",
+   "prompt": "I ___ in this city since 2019.",
+   "options": [
+    "live",
+    "am living",
+    "lived",
+    "have lived"
+   ],
+   "answer_index": 3,
+   "explanation": "'Since' + a point in time needs the present perfect."
+  },
+  {
+   "id": "g-tenses-2",
+   "kind": "grammar",
+   "topic": "Tenses",
+   "prompt": "When I called, she ___ dinner.",
+   "options": [
+    "was cooking",
+    "has cooked",
+    "cooks",
+    "cooked"
+   ],
+   "answer_index": 0,
+   "explanation": "Past continuous shows an action in progress when another happened."
+  },
+  {
+   "id": "g-tenses-3",
+   "kind": "grammar",
+   "topic": "Tenses",
+   "prompt": "By next June, I ___ my degree.",
+   "options": [
+    "am finishing",
+    "will have finished",
+    "finish",
+    "finished"
+   ],
+   "answer_index": 1,
+   "explanation": "Future perfect: finished before a future time."
+  },
+  {
+   "id": "g-articles-1",
+   "kind": "grammar",
+   "topic": "Articles",
+   "prompt": "She is ___ honest person.",
+   "options": [
+    "the",
+    "(no article)",
+    "an",
+    "a"
+   ],
+   "answer_index": 2,
+   "explanation": "'Honest' starts with a vowel sound, so we use 'an'."
+  },
+  {
+   "id": "g-articles-2",
+   "kind": "grammar",
+   "topic": "Articles",
+   "prompt": "___ sun rises in the east.",
+   "options": [
+    "The",
+    "A",
+    "An",
+    "(no article)"
+   ],
+   "answer_index": 0,
+   "explanation": "We use 'the' for unique things such as the sun."
+  },
+  {
+   "id": "g-articles-3",
+   "kind": "grammar",
+   "topic": "Articles",
+   "prompt": "He plays ___ guitar every evening.",
+   "options": [
+    "(no article)",
+    "an",
+    "a",
+    "the"
+   ],
+   "answer_index": 3,
+   "explanation": "We use 'the' with musical instruments."
+  },
+  {
+   "id": "g-prepositions-1",
+   "kind": "grammar",
+   "topic": "Prepositions",
+   "prompt": "She is good ___ mathematics.",
+   "options": [
+    "in",
+    "at",
+    "for",
+    "on"
+   ],
+   "answer_index": 1,
+   "explanation": "'Good at' is the correct collocation."
+  },
+  {
+   "id": "g-prepositions-2",
+   "kind": "grammar",
+   "topic": "Prepositions",
+   "prompt": "We arrived ___ the airport at noon.",
+   "options": [
+    "at",
+    "on",
+    "to",
+    "in"
+   ],
+   "answer_index": 0,
+   "explanation": "We 'arrive at' a place like an airport."
+  },
+  {
+   "id": "g-prepositions-3",
+   "kind": "grammar",
+   "topic": "Prepositions",
+   "prompt": "He is interested ___ history.",
+   "options": [
+    "on",
+    "for",
+    "at",
+    "in"
+   ],
+   "answer_index": 3,
+   "explanation": "'Interested in' is correct."
+  },
+  {
+   "id": "g-subject-verb-agreement-1",
+   "kind": "grammar",
+   "topic": "Subject-verb agreement",
+   "prompt": "The number of students ___ increasing.",
+   "options": [
+    "be",
+    "is",
+    "were",
+    "are"
+   ],
+   "answer_index": 1,
+   "explanation": "'The number of' takes a singular verb."
+  },
+  {
+   "id": "g-subject-verb-agreement-2",
+   "kind": "grammar",
+   "topic": "Subject-verb agreement",
+   "prompt": "Neither the teacher nor the students ___ ready.",
+   "options": [
+    "were",
+    "was",
+    "is",
+    "has"
+   ],
+   "answer_index": 0,
+   "explanation": "With 'neither...nor', the verb agrees with the nearer subject (students)."
+  },
+  {
+   "id": "g-subject-verb-agreement-3",
+   "kind": "grammar",
+   "topic": "Subject-verb agreement",
+   "prompt": "Everyone ___ invited to the party.",
+   "options": [
+    "are",
+    "is",
+    "have been",
+    "were"
+   ],
+   "answer_index": 1,
+   "explanation": "'Everyone' is singular."
+  },
+  {
+   "id": "g-conditionals-1",
+   "kind": "grammar",
+   "topic": "Conditionals",
+   "prompt": "If it rains tomorrow, we ___ at home.",
+   "options": [
+    "would have stayed",
+    "will stay",
+    "would stayed",
+    "stayed"
+   ],
+   "answer_index": 1,
+   "explanation": "First conditional: if + present, will + verb."
+  },
+  {
+   "id": "g-conditionals-2",
+   "kind": "grammar",
+   "topic": "Conditionals",
+   "prompt": "If she had studied harder, she ___ the exam.",
+   "options": [
+    "will pass",
+    "passed",
+    "would pass",
+    "would have passed"
+   ],
+   "answer_index": 3,
+   "explanation": "Third conditional: if + past perfect, would have + past participle."
+  },
+  {
+   "id": "g-conditionals-3",
+   "kind": "grammar",
+   "topic": "Conditionals",
+   "prompt": "I wish I ___ more time.",
+   "options": [
+    "would have",
+    "will have",
+    "had",
+    "have"
+   ],
+   "answer_index": 2,
+   "explanation": "'Wish' about the present uses the past simple."
+  },
+  {
+   "id": "g-passive-voice-1",
+   "kind": "grammar",
+   "topic": "Passive voice",
+   "prompt": "The bridge ___ in 1990.",
+   "options": [
+    "was building",
+    "has build",
+    "built",
+    "was built"
+   ],
+   "answer_index": 3,
+   "explanation": "Passive past simple: was/were + past participle."
+  },
+  {
+   "id": "g-passive-voice-2",
+   "kind": "grammar",
+   "topic": "Passive voice",
+   "prompt": "English ___ all over the world.",
+   "options": [
+    "speaks",
+    "is speaking",
+    "spoken",
+    "is spoken"
+   ],
+   "answer_index": 3,
+   "explanation": "Passive present simple: is/are + past participle."
+  },
+  {
+   "id": "g-passive-voice-3",
+   "kind": "grammar",
+   "topic": "Passive voice",
+   "prompt": "The results ___ next week.",
+   "options": [
+    "will be announced",
+    "are announcing",
+    "announced",
+    "will announce"
+   ],
+   "answer_index": 0,
+   "explanation": "Passive future: will be + past participle."
+  },
+  {
+   "id": "g-relative-clauses-1",
+   "kind": "grammar",
+   "topic": "Relative clauses",
+   "prompt": "The woman ___ lives next door is a doctor.",
+   "options": [
+    "whose",
+    "who",
+    "which",
+    "where"
+   ],
+   "answer_index": 1,
+   "explanation": "'Who' refers to people as the subject."
+  },
+  {
+   "id": "g-relative-clauses-2",
+   "kind": "grammar",
+   "topic": "Relative clauses",
+   "prompt": "That is the school ___ I studied.",
+   "options": [
+    "who",
+    "which",
+    "whose",
+    "where"
+   ],
+   "answer_index": 3,
+   "explanation": "'Where' refers to a place."
+  },
+  {
+   "id": "g-relative-clauses-3",
+   "kind": "grammar",
+   "topic": "Relative clauses",
+   "prompt": "He is the man ___ car was stolen.",
+   "options": [
+    "which",
+    "who",
+    "whom",
+    "whose"
+   ],
+   "answer_index": 3,
+   "explanation": "'Whose' shows possession."
+  },
+  {
+   "id": "g-modals-1",
+   "kind": "grammar",
+   "topic": "Modals",
+   "prompt": "You ___ wear a seatbelt; it is the law.",
+   "options": [
+    "could",
+    "might",
+    "must",
+    "may"
+   ],
+   "answer_index": 2,
+   "explanation": "'Must' expresses a strong obligation."
+  },
+  {
+   "id": "g-modals-2",
+   "kind": "grammar",
+   "topic": "Modals",
+   "prompt": "She ___ be at home; her light is on.",
+   "options": [
+    "need",
+    "would",
+    "must",
+    "should"
+   ],
+   "answer_index": 2,
+   "explanation": "'Must' also expresses a strong deduction."
+  },
+  {
+   "id": "g-modals-3",
+   "kind": "grammar",
+   "topic": "Modals",
+   "prompt": "He ___ swim when he was five.",
+   "options": [
+    "can",
+    "must",
+    "could",
+    "may"
+   ],
+   "answer_index": 2,
+   "explanation": "'Could' expresses ability in the past."
+  },
+  {
+   "id": "g-complex-sentences-1",
+   "kind": "grammar",
+   "topic": "Complex sentences",
+   "prompt": "___ it was raining, we went for a walk.",
+   "options": [
+    "Although",
+    "So",
+    "Unless",
+    "Because"
+   ],
+   "answer_index": 0,
+   "explanation": "'Although' shows contrast."
+  },
+  {
+   "id": "g-complex-sentences-2",
+   "kind": "grammar",
+   "topic": "Complex sentences",
+   "prompt": "She stayed home ___ she felt ill.",
+   "options": [
+    "unless",
+    "because",
+    "whereas",
+    "although"
+   ],
+   "answer_index": 1,
+   "explanation": "'Because' gives a reason."
+  },
+  {
+   "id": "g-complex-sentences-3",
+   "kind": "grammar",
+   "topic": "Complex sentences",
+   "prompt": "I will call you ___ I arrive.",
+   "options": [
+    "although",
+    "as soon as",
+    "unless",
+    "despite"
+   ],
+   "answer_index": 1,
+   "explanation": "'As soon as' links two actions in time."
+  },
+  {
+   "id": "g-sentence-structure-1",
+   "kind": "grammar",
+   "topic": "Sentence structure",
+   "prompt": "Which sentence is correct?",
+   "options": [
+    "Rarely do we see such talent.",
+    "Rarely we do see such talent.",
+    "We rarely do see such talent.",
+    "Rarely we see such talent."
+   ],
+   "answer_index": 0,
+   "explanation": "Negative adverbs at the start need inversion."
+  },
+  {
+   "id": "g-sentence-structure-2",
+   "kind": "grammar",
+   "topic": "Sentence structure",
+   "prompt": "Which sentence is correct?",
+   "options": [
+    "She asked me where I lived.",
+    "She asked me where lived I.",
+    "She asked me where I did live.",
+    "She asked me where did I live."
+   ],
+   "answer_index": 0,
+   "explanation": "Reported questions use normal word order."
+  },
+  {
+   "id": "g-sentence-structure-3",
+   "kind": "grammar",
+   "topic": "Sentence structure",
+   "prompt": "Which sentence is correct?",
+   "options": [
+    "Not only is it cheap, but it is also durable.",
+    "Not only it is cheap, but also durable it is.",
+    "Not only is cheap it, but durable.",
+    "Not only it cheap is, but it durable is."
+   ],
+   "answer_index": 0,
+   "explanation": "'Not only' at the start needs inversion."
+  }
+ ]
+}
