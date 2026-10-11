@@ -29,6 +29,14 @@ IELTSMate is an AI-powered IELTS preparation platform designed to help learners 
 | Containerization | Docker, Docker Compose |
 | Version Control | Git, GitHub |
 
+## 📸 Screenshots
+
+### Sign Up Page
+![IELTSMate Sign Up Page](docs/signup.jpeg)
+
+### Student Dashboard
+![IELTSMate Student Dashboard](docs/dashboard.jpeg)
+
 ## 📂 Project Structure
 
 ```text
