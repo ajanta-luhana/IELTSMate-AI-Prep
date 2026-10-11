@@ -16,15 +16,6 @@ IELTSMate is an AI-powered IELTS preparation platform designed to help learners 
 - **Vocabulary & Grammar** — Build vocabulary and strengthen grammatical accuracy.
 - **User Profiles** — Manage your learning profile and preparation preferences.
 
-## 📸 Screenshots
-
-### Sign Up Page
-
-![IELTSMate Sign Up Page](docs/screenshots/signup.jpeg)
-
-### Student Dashboard
-
-![IELTSMate Student Dashboard](docs/screenshots/dashboard.jpeg)
 
 ## 🛠️ Technology Stack
 
