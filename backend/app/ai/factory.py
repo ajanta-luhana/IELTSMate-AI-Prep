@@ -15,5 +15,5 @@ def get_ai_provider() -> AIProvider:
     if s.ai_provider == "local":
         return LocalModelProvider()
     if s.ai_provider == "cloud":
-        return CloudProvider()
+        return CloudProvider(s.ai_timeout_seconds)
     raise ValueError(f"Unknown AI_PROVIDER: {s.ai_provider!r}")
