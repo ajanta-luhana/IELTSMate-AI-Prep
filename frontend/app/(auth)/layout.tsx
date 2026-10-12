@@ -1,53 +1,87 @@
-import Link from "next/link";
-import { BarChart3, Mic, PenLine, ShieldCheck } from "lucide-react";
-import { Disclaimer } from "@/components/layout/disclaimer";
+import { CheckCircle2, Lock, ShieldCheck, Sparkles } from "lucide-react";
+import { SiteFooter } from "@/components/marketing/site-footer";
+import { SiteHeader } from "@/components/marketing/site-header";
 
 const POINTS = [
-  { icon: PenLine, title: "Writing feedback in minutes", text: "Criteria-based comments and rewrite ideas for Task 1 and Task 2." },
-  { icon: Mic, title: "Speaking practice, no pressure", text: "Record, check your transcript, then get friendly coaching." },
-  { icon: BarChart3, title: "See your progress", text: "A personal study plan and weekly charts toward your target band." },
+  "Feedback on Writing and Speaking in minutes",
+  "Reading and Listening marked instantly",
+  "A study plan built around your target band",
+];
+const TRUST = [
+  { icon: Sparkles, title: "Free to use", text: "No credit card, no trial timer." },
+  { icon: Lock, title: "Recordings not stored", text: "Audio becomes text, then it is deleted." },
+  { icon: ShieldCheck, title: "Original questions", text: "Written for IELTSMate, not copied." },
+];
+const SAMPLE = [
+  { label: "Speaking", value: 6.0 },
+  { label: "Writing", value: 6.5 },
+  { label: "Reading", value: 7.0 },
+  { label: "Listening", value: 6.5 },
 ];
 
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="grid min-h-screen lg:grid-cols-2">
-      {/* Brand panel (desktop) */}
-      <aside className="relative hidden overflow-hidden bg-gradient-to-br from-sidebar via-[hsl(228,55%,22%)] to-primary p-12 text-white lg:flex lg:flex-col lg:justify-between">
-        <div aria-hidden="true" className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
-        <div aria-hidden="true" className="pointer-events-none absolute -bottom-32 -left-16 h-96 w-96 rounded-full bg-primary/40 blur-3xl" />
-        <Link href="/" className="relative flex items-center gap-2 text-xl font-semibold">
-          <span className="grid h-9 w-9 place-items-center rounded-lg bg-white/15 text-sm font-bold">IM</span>
-          IELTSMate
-        </Link>
-        <div className="relative space-y-8">
-          <div className="space-y-3">
-            <h2 className="text-4xl font-semibold leading-tight">Your free AI IELTS coach.</h2>
-            <p className="max-w-md text-white/75">Practice every skill, understand your mistakes, and build confidence before exam day.</p>
-          </div>
-          <ul className="space-y-5">
-            {POINTS.map(({ icon: Icon, title, text }) => (
-              <li key={title} className="flex gap-4">
-                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-white/10"><Icon className="h-5 w-5" aria-hidden="true" /></span>
+    <div className="flex min-h-screen flex-col bg-background">
+      <SiteHeader />
+      <main className="flex-1 bg-gradient-to-b from-secondary/70 to-background">
+        <div className="container grid items-center gap-12 py-12 lg:grid-cols-[1.1fr_1fr] lg:py-20">
+          {/* Left: pitch and sample result (desktop) */}
+          <section className="hidden space-y-8 lg:block" aria-label="About IELTSMate">
+            <div className="space-y-4">
+              <h2 className="max-w-lg text-4xl font-bold leading-tight tracking-tight">Know your weak spots. Fix them one practice at a time.</h2>
+              <ul className="space-y-2">
+                {POINTS.map((p) => (
+                  <li key={p} className="flex items-center gap-2 text-muted-foreground">
+                    <CheckCircle2 className="h-5 w-5 shrink-0 text-success" aria-hidden="true" />
+                    {p}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <figure className="max-w-md rounded-2xl border bg-card p-6 shadow-[0_20px_50px_-20px_rgba(30,41,120,0.3)]">
+              <div className="flex items-end justify-between">
                 <div>
-                  <p className="font-medium">{title}</p>
-                  <p className="text-sm text-white/70">{text}</p>
+                  <p className="text-sm text-muted-foreground">Estimated overall band</p>
+                  <p className="text-5xl font-bold tabular-nums">6.5</p>
+                </div>
+                <span className="rounded-full bg-success/15 px-3 py-1 text-xs font-medium text-success">+0.5 this month</span>
+              </div>
+              <ul className="mt-5 space-y-3">
+                {SAMPLE.map((s) => (
+                  <li key={s.label} className="grid grid-cols-[5rem_1fr_2rem] items-center gap-3 text-sm">
+                    <span className="text-muted-foreground">{s.label}</span>
+                    <span className="h-2 overflow-hidden rounded-full bg-muted" aria-hidden="true">
+                      <span className="block h-full rounded-full bg-primary" style={{ width: `${(s.value / 9) * 100}%` }} />
+                    </span>
+                    <span className="text-right font-medium tabular-nums">{s.value.toFixed(1)}</span>
+                  </li>
+                ))}
+              </ul>
+              <figcaption className="mt-4 text-xs text-muted-foreground">Example of a progress view. Bands in IELTSMate are estimates, not official scores.</figcaption>
+            </figure>
+          </section>
+
+          {/* Right: the form */}
+          <div className="mx-auto w-full max-w-md">
+            <div className="rounded-2xl border bg-card p-6 shadow-[0_10px_40px_-12px_rgba(30,41,120,0.18)] sm:p-9">{children}</div>
+          </div>
+        </div>
+
+        <div className="container pb-12">
+          <ul className="grid gap-4 border-t pt-8 sm:grid-cols-3">
+            {TRUST.map(({ icon: Icon, title, text }) => (
+              <li key={title} className="flex items-start gap-3">
+                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-secondary text-primary"><Icon className="h-5 w-5" aria-hidden="true" /></span>
+                <div>
+                  <p className="text-sm font-medium">{title}</p>
+                  <p className="text-sm text-muted-foreground">{text}</p>
                 </div>
               </li>
             ))}
           </ul>
         </div>
-        <p className="relative flex items-center gap-2 text-sm text-white/70">
-          <ShieldCheck className="h-4 w-4" aria-hidden="true" /> Free to use. Your recordings are never stored.
-          
-        </p>
-      </aside>
-
-      {/* Form panel */}
-      <main className="flex flex-col items-center justify-center gap-6 bg-background px-4 py-10">
-        <Link href="/" className="text-2xl font-bold text-primary lg:hidden">IELTSMate</Link>
-        <div className="w-full max-w-md rounded-2xl border bg-card p-6 shadow-[0_10px_40px_-12px_rgba(30,41,120,0.18)] sm:p-9">{children}</div>
-        <Disclaimer className="max-w-md text-center text-xs text-muted-foreground" />
       </main>
+      <SiteFooter />
     </div>
   );
 }
