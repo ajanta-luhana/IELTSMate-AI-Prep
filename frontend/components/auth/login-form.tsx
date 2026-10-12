@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { createClient } from "@/lib/supabase/client";
 import { friendlyAuthError, loginSchema } from "@/lib/validation/auth";
+import { PasswordField } from "./password-field";
 import { useAuthForm } from "./use-auth-form";
 
 export function LoginForm({ next, linkError }: { next: string; linkError: boolean }) {
@@ -23,7 +24,7 @@ export function LoginForm({ next, linkError }: { next: string; linkError: boolea
       {linkError && <Alert variant="warning">That link has expired or was already used. Please sign in or request a new one.</Alert>}
       {error && <Alert variant="error">{error}</Alert>}
       <Field label="Email" name="email" type="email" autoComplete="email" placeholder="you@example.com" required />
-      <Field label="Password" name="password" type="password" autoComplete="current-password" required />
+      <PasswordField label="Password" name="password" autoComplete="current-password" />
       <Button type="submit" size="lg" className="w-full" disabled={loading}>
         {loading ? "Signing in…" : "Sign in"}
       </Button>

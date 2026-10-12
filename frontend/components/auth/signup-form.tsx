@@ -2,11 +2,13 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { MailCheck } from "lucide-react";
 import { Alert } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { createClient } from "@/lib/supabase/client";
 import { friendlyAuthError, signupSchema } from "@/lib/validation/auth";
+import { PasswordField } from "./password-field";
 import { useAuthForm } from "./use-auth-form";
 
 export function SignupForm() {
@@ -30,9 +32,13 @@ export function SignupForm() {
 
   if (checkEmail) {
     return (
-      <div className="space-y-4">
-        <Alert variant="success">Account created! Check your email and click the confirmation link to start practicing.</Alert>
-        <Link href="/login" className="text-sm text-primary hover:underline">Back to sign in</Link>
+      <div className="space-y-5 text-center">
+        <span className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-success/15 text-success"><MailCheck className="h-7 w-7" aria-hidden="true" /></span>
+        <div className="space-y-1">
+          <h2 className="text-2xl font-semibold">Check your email</h2>
+          <p className="text-sm text-muted-foreground">We sent a confirmation link. Open it to activate your account and start practising.</p>
+        </div>
+        <Button asChild variant="outline" className="w-full"><Link href="/login">Back to sign in</Link></Button>
       </div>
     );
   }
@@ -41,11 +47,12 @@ export function SignupForm() {
       {error && <Alert variant="error">{error}</Alert>}
       <Field label="Your name" name="name" autoComplete="name" required />
       <Field label="Email" name="email" type="email" autoComplete="email" placeholder="you@example.com" required />
-      <Field label="Password" name="password" type="password" autoComplete="new-password" minLength={8} required />
-      <Field label="Confirm password" name="confirm" type="password" autoComplete="new-password" required />
+      <PasswordField label="Password" name="password" autoComplete="new-password" minLength={8} showStrength />
+      <PasswordField label="Confirm password" name="confirm" autoComplete="new-password" />
       <Button type="submit" size="lg" className="w-full" disabled={loading}>
         {loading ? "Creating account…" : "Create free account"}
       </Button>
+      <p className="text-center text-xs text-muted-foreground">By creating an account you agree that all scores are estimates and not official IELTS results.</p>
       <p className="text-center text-sm text-muted-foreground">
         Already have an account? <Link href="/login" className="text-primary hover:underline">Sign in</Link>
       </p>
